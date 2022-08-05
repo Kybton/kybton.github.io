@@ -41,6 +41,23 @@
                     </ul>
                 </div>
             </div>
+
+            <div class="search-box">
+                <input type="text" id="myText" placeholder="Type to Search" onkeypress="clickPress(event)">
+            </div>
         </div> 
+
+        <script>
+            window.onload = function() {
+                document.getElementById("myText").focus();
+            }
+
+            function clickPress(event) {
+                if (event.keyCode === 13) {
+                    document.location.href = 'https://www.ecosia.org/search?q=' + document.getElementById('myText').value;
+                    return false;
+                }
+            }
+        </script>
     </body>
 </html>
