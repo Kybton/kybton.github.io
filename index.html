@@ -43,18 +43,15 @@
             </div>
 
             <div class="search-box">
-                <input type="text" id="myText" placeholder="Type to Search" onkeypress="clickPress(event)">
+                <input type="text" autofocus id="myText" placeholder="Type to Search" onkeypress="Search(event)">
             </div>
         </div> 
 
         <script>
-            window.onload = function() {
-                document.getElementById("myText").focus();
-            }
-
-            function clickPress(event) {
+            function Search(event) {
                 if (event.keyCode === 13) {
-                    document.location.href = 'https://www.ecosia.org/search?q=' + document.getElementById('myText').value;
+                    search_string = document.getElementById('myText').value;
+                    document.location.href = 'https://www.ecosia.org/search?q=' + search_string;
                     return false;
                 }
             }
