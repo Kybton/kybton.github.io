@@ -44,7 +44,7 @@ ul {
 
 .container {
     margin: auto;
-    height: 50rem;
+    height: 35rem;
     width: 60%;
     background: var(--background);
     display: flex;
@@ -129,14 +129,13 @@ input[type=text] {
 }
 
 #digital-clock {
-    position: absolute;
-    top: 5%;
-    left: 38%;
     margin: auto;
     color: var(--amber);
     font-size: 40px;
     font-weight: 500;
     border-radius: 10px;
     border: 2px solid var(--pink);
-    padding: 40px 30px;
+    padding: 50px 50px;
+    width: 30%;
+    margin-bottom: 50px;
 }
