@@ -33,9 +33,10 @@ ul {
 }
 
 .background {
+    margin: auto;
     display: block;
     text-align: center;
-    margin: auto;
+    align-items: center;
     width: 100%;
     height: 100vh;
     background-color: var(--background);
@@ -120,4 +121,22 @@ input[type=text] {
     color: var(--foreground);
     text-align: center;
     font-size: 17px;
+}
+
+.name-clock {
+    align-items: center;
+    margin: auto;
+}
+
+#digital-clock {
+    position: absolute;
+    top: 5%;
+    left: 38%;
+    margin: auto;
+    color: var(--amber);
+    font-size: 40px;
+    font-weight: 500;
+    border-radius: 10px;
+    border: 2px solid var(--pink);
+    padding: 40px 30px;
 }

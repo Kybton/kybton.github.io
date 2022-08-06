@@ -2,12 +2,13 @@
 <html>
     <head>
         <title>New Tab</title>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="styles.css">
     </head>
     <body>
         <div class="background">
+            <div class="clock" id="digital-clock"></div>
             <div class="container">
-                <div>
+                <div class="name-clock">
                     <h1>Hello!<br>Min Oak Kyaw</h1>
                 </div>
 
@@ -46,15 +47,6 @@
                 <input type="text" autofocus id="myText" placeholder="Type to Search" onkeypress="Search(event)">
             </div>
         </div> 
-
-        <script>
-            function Search(event) {
-                if (event.keyCode === 13) {
-                    search_string = document.getElementById('myText').value;
-                    document.location.href = 'https://www.ecosia.org/search?q=' + search_string;
-                    return false;
-                }
-            }
-        </script>
+        <script src="script.js"></script>
     </body>
 </html>
